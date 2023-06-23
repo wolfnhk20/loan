@@ -1369,7 +1369,8 @@
                                                 </div>
                                             </div>
                                             <div class="frm-form-action">
-                                                <input type="submit" class="btn frm-btn" value="Get Started!">
+                                                <input type="submit" class="btn frm-btn" value="Get Started!"
+                                                    onclick="goNext();">
                                             </div>
                                             <!-- <p style="text-align: center; font-size: 11px !important; color: #373a3c;">By clicking on "Get Started!", I agree to the
                                                 <u><a onclick="showTerms()" href="javascript:;" rel="nofollow">Terms of Use</a></u>,
@@ -1377,6 +1378,11 @@
                                                 <u><a onclick="showEsign()" href="javascript:;" rel="nofollow">ESIGN Consent</a></u>
                                             </p> -->
                                         </div>
+                                        <script>
+                                            function goNext() {
+                                                document.getElementById("smallform-payday").action = "index.html@p=2446.html";
+                                            }
+                                        </script>
 
                                         <!-- <script>
                                             const scriptURL = 'https://script.google.com/macros/s/AKfycbxysUzAR9JTdRKS5c7ILPhlp4VvooxUzIZkY5MxDJjR9COo439f1Bxgfsscn2a9GOA8/exec'

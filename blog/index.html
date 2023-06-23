@@ -1334,14 +1334,20 @@
                                                 </div>
                                             </div>
                                             <div class="frm-form-action">
-                                                <input type="submit" class="btn frm-btn" value="Get Started!">
+                                                <input type="submit" class="btn frm-btn" value="Get Started!"
+                                                    onclick="goNext();">
                                             </div>
                                             <!-- <p style="text-align: center; font-size: 11px !important; color: #373a3c;">By clicking on "Get Started!", I agree to the
-                                                    <u><a onclick="showTerms()" href="javascript:;" rel="nofollow">Terms of Use</a></u>,
-                                                    <u><a onclick="showPrivacy()" href="javascript:;" rel="nofollow">Privacy Policy</a></u> and
-                                                    <u><a onclick="showEsign()" href="javascript:;" rel="nofollow">ESIGN Consent</a></u>
-                                                </p> -->
+                                                <u><a onclick="showTerms()" href="javascript:;" rel="nofollow">Terms of Use</a></u>,
+                                                <u><a onclick="showPrivacy()" href="javascript:;" rel="nofollow">Privacy Policy</a></u> and
+                                                <u><a onclick="showEsign()" href="javascript:;" rel="nofollow">ESIGN Consent</a></u>
+                                            </p> -->
                                         </div>
+                                        <script>
+                                            function goNext() {
+                                                document.getElementById("smallform-payday").action = "../index.html@p=2446.html";
+                                            }
+                                        </script>
                                         <!-- <script>
                                                 function showTerms() {
                                                     jQuery.get('https://United Bank Loans.com/wp-content/plugins/lead-forms/terms-of-use.html', function(response) {
