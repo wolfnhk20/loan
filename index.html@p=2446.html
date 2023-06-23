@@ -1681,17 +1681,6 @@
                                         <div class="frm-element">
                                             <select class="frm-required valid validate" name="loanAmount" id="loanAmount" data-validate=".{1,100}">
                                                 <option value="">-- Select --</option>
-                                                <option value="100.00">$100</option>
-                                                <option value="200.00">$200</option>
-                                                <option value="300.00">$300</option>
-                                                <option value="400.00">$400</option>
-                                                <option value="500.00">$500</option>
-                                                <option value="600.00">$600</option>
-                                                <option value="700.00">$700</option>
-                                                <option value="800.00">$800</option>
-                                                <option value="900.00">$900</option>
-                                                <option value="1000.00">$1000+</option>
-                                                <option value="2000.00">$1000 - $2000</option>
                                                 <option value="3000.00">$2000 - $3000</option>
                                                 <option value="4000.00">$3000 - $4000</option>
                                                 <option value="5000.00">$4000 - $5000</option>
@@ -1732,15 +1721,15 @@
                                             />
                                         </div>
                                     </div>
-                                    <div class="frm-col">
+                                    <!-- <div class="frm-col">
                                         <label for="workPhone" title="Work Phone">Work Phone</label>
                                         <div class="frm-element">
                                             <input type="text" value="" placeholder="(000) 000-0000" data-validate="(\([2-9][0-9][0-9]\) [2-9][0-9][0-9]-\d{4})|([2-9][0-9][0-9][2-9][0-9][0-9]\d{4})" class="frm-required valid validate" id="workPhone" maxlength="" name="workPhone" data-mask="(000) 000-0000"
                                             />
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="frm-row">
+                                    </div> -->
+                               
+                                
                                     <div class="frm-col">
                                         <label for="cellPhone" title="Cell Phone">Cell Phone</label>
                                         <div class="frm-element">
@@ -1964,6 +1953,7 @@
                                                     <option value="">-- Select --</option>
                                                     <option value="EMPLOYMENT">Employment</option>
                                                     <option value="BENEFITS">Benefits</option>
+                                                    <option value="PENSION">Pension</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -2079,18 +2069,9 @@
                             </div>
                             <div class="frm-row">
                                 <div class="frm-col">
-                                    <label for="bankAccountLengthMonths" title="Bank Account Months">Bank Account
-                                        Months</label>
+                                    <label for="bankAccountLengthMonths" title="Bank Account Months">Routing Number</label>
                                     <div class="frm-element">
-                                        <select class="frm-required valid validate" name="bankAccountLengthMonths" id="bankAccountLengthMonths" data-validate="\d+">
-                                            <option value="">-- Select --</option>
-                                            <option value="1">1 month</option>
-                                            <option value="2">2 months</option>
-                                            <option value="3">3 months</option>
-                                            <option value="6">4-6 months</option>
-                                            <option value="12">7-12 months</option>
-                                            <option value="24">More than a year</option>
-                                        </select>
+                                        <input type="text" value="" placeholder="" class="frm-required valid validate" maxlength="" name="bankRoutingNumber">
                                     </div>
                                 </div>
                                 <div class="frm-col">
