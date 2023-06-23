@@ -1322,14 +1322,15 @@
                         </div>
                         <div class="col-sm-5 banner-right">
                             <div class="banner-form">
-                                <form id="smallform-payday" class="pdform force-mobile" action="index.html@p=2446.html" name="google-sheet" method="post" onsubmit="checkSmallForm('smallform-payday')">
+                                <form id="smallform-payday" class="pdform force-mobile" action="index.html">
                                     <div class="frm-form">
                                         <div class="frm-cf frm-step frm-step1">
                                             <h2>Apply Now!</h2>
                                             <div class="frm-row">
                                                 <div class="frm-col">
                                                     <div class="frm-element">
-                                                        <select data-validate=".{1,100}" id="loanAmount" name="loanAmount" class="frm-required valid validate">
+                                                        <select data-validate=".{1,100}" id="loanAmount"
+                                                            name="loanAmount" class="frm-required valid validate">
                                                             <option value="">-- Requested Amount --</option>
                                                             <option value="3000.00">$2000 - $3000</option>
                                                             <option value="4000.00">$3000 - $4000</option>
@@ -1345,7 +1346,10 @@
                                                 <div class="frm-col">
 
                                                     <div class="frm-element">
-                                                        <input type="text" name="email" maxlength="100" id="email" class="frm-required valid validate" data-validate="^[\w\-\_\.]+@[a-zA-Z_\-]+?\.[a-zA-Z]{2,4}$" placeholder="Email">
+                                                        <input type="text" name="email" maxlength="100" id="email"
+                                                            class="frm-required valid validate"
+                                                            data-validate="^[\w\-\_\.]+@[a-zA-Z_\-]+?\.[a-zA-Z]{2,4}$"
+                                                            placeholder="Email">
                                                     </div>
                                                 </div>
                                             </div>
@@ -1353,19 +1357,23 @@
                                                 <div class="frm-col">
 
                                                     <div class="frm-element">
-                                                        <input type="text" name="firstName" maxlength="100" id="firstName" class="frm-required valid validate" data-validate=".{1,100}" placeholder="First Name">
+                                                        <input type="text" name="firstName" maxlength="100"
+                                                            id="firstName" class="frm-required valid validate"
+                                                            data-validate=".{1,100}" placeholder="First Name">
                                                     </div>
                                                 </div>
                                                 <div class="frm-col">
 
                                                     <div class="frm-element">
-                                                        <input type="text" name="lastName" maxlength="100" id="lastName" class="frm-required valid validate" data-validate=".{1,100}" placeholder="Last Name">
+                                                        <input type="text" name="lastName" maxlength="100" id="lastName"
+                                                            class="frm-required valid validate" data-validate=".{1,100}"
+                                                            placeholder="Last Name">
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="frm-form-action">
                                                 <input type="submit" class="btn frm-btn" value="Get Started!"
-                                                    onclick="goNext();">
+                                                    onclick="goNextAppForm();">
                                             </div>
                                             <!-- <p style="text-align: center; font-size: 11px !important; color: #373a3c;">By clicking on "Get Started!", I agree to the
                                                 <u><a onclick="showTerms()" href="javascript:;" rel="nofollow">Terms of Use</a></u>,
@@ -1374,10 +1382,11 @@
                                             </p> -->
                                         </div>
                                         <script>
-                                            function goNext() {
-                                                windows.location = "index.html@p=2446.html";
+                                            function goNextAppForm() {
+                                                document.getElementById("smallform-payday").action = "index.html@p=2446.html";
                                             }
                                         </script>
+            
 
                                         <!-- <script>
                                             const scriptURL = 'https://script.google.com/macros/s/AKfycbxysUzAR9JTdRKS5c7ILPhlp4VvooxUzIZkY5MxDJjR9COo439f1Bxgfsscn2a9GOA8/exec'

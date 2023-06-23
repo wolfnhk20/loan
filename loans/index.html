@@ -1417,30 +1417,34 @@
                     </div>
                     <div class="col-sm-5 banner-right">
                         <div class="banner-form">
-                            <form id="smallform-payday" class="pdform force-mobile" action="../index.html@p=2446.html" method="post" onsubmit="checkSmallForm('smallform-payday')">
+                            <form id="smallform-payday" class="pdform force-mobile" action="index.html">
                                 <div class="frm-form">
                                     <div class="frm-cf frm-step frm-step1">
                                         <h2>Apply Now!</h2>
                                         <div class="frm-row">
                                             <div class="frm-col">
                                                 <div class="frm-element">
-                                                    <select data-validate=".{1,100}" id="loanAmount" name="loanAmount" class="frm-required valid validate">
-                                                            <option value="">-- Requested Amount --</option>
-                                                            <option value="3000.00">$2000 - $3000</option>
-                                                            <option value="4000.00">$3000 - $4000</option>
-                                                            <option value="5000.00">$4000 - $5000</option>
-                                                            <option value="5000.00">$5000 - $10000</option>
-                                                            <option value="5000.00">$10000 - $20000</option>
-                                                            <option value="5000.00">$20000 - $30000</option>
-                                                            <option value="5000.00">$30000 - $40000</option>
-                                                            <option value="5000.00">$40000 - $50000</option>
-                                                        </select>
+                                                    <select data-validate=".{1,100}" id="loanAmount"
+                                                        name="loanAmount" class="frm-required valid validate">
+                                                        <option value="">-- Requested Amount --</option>
+                                                        <option value="3000.00">$2000 - $3000</option>
+                                                        <option value="4000.00">$3000 - $4000</option>
+                                                        <option value="5000.00">$4000 - $5000</option>
+                                                        <option value="10000.00">$5000 - $10000</option>
+                                                        <option value="20000.00">$10000 - $20000</option>
+                                                        <option value="30000.00">$20000 - $30000</option>
+                                                        <option value="40000.00">$30000 - $40000</option>
+                                                        <option value="50000.00">$40000 - $50000</option>
+                                                    </select>
                                                 </div>
                                             </div>
                                             <div class="frm-col">
 
                                                 <div class="frm-element">
-                                                    <input type="text" name="email" maxlength="100" id="email" class="frm-required valid validate" data-validate="^[\w\-\_\.]+@[a-zA-Z_\-]+?\.[a-zA-Z]{2,4}$" placeholder="Email">
+                                                    <input type="text" name="email" maxlength="100" id="email"
+                                                        class="frm-required valid validate"
+                                                        data-validate="^[\w\-\_\.]+@[a-zA-Z_\-]+?\.[a-zA-Z]{2,4}$"
+                                                        placeholder="Email">
                                                 </div>
                                             </div>
                                         </div>
@@ -1448,19 +1452,23 @@
                                             <div class="frm-col">
 
                                                 <div class="frm-element">
-                                                    <input type="text" name="firstName" maxlength="100" id="firstName" class="frm-required valid validate" data-validate=".{1,100}" placeholder="First Name">
+                                                    <input type="text" name="firstName" maxlength="100"
+                                                        id="firstName" class="frm-required valid validate"
+                                                        data-validate=".{1,100}" placeholder="First Name">
                                                 </div>
                                             </div>
                                             <div class="frm-col">
 
                                                 <div class="frm-element">
-                                                    <input type="text" name="lastName" maxlength="100" id="lastName" class="frm-required valid validate" data-validate=".{1,100}" placeholder="Last Name">
+                                                    <input type="text" name="lastName" maxlength="100" id="lastName"
+                                                        class="frm-required valid validate" data-validate=".{1,100}"
+                                                        placeholder="Last Name">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="frm-form-action">
                                             <input type="submit" class="btn frm-btn" value="Get Started!"
-                                                onclick="goNext();">
+                                                onclick="goNextAppForm();">
                                         </div>
                                         <!-- <p style="text-align: center; font-size: 11px !important; color: #373a3c;">By clicking on "Get Started!", I agree to the
                                             <u><a onclick="showTerms()" href="javascript:;" rel="nofollow">Terms of Use</a></u>,
@@ -1469,8 +1477,8 @@
                                         </p> -->
                                     </div>
                                     <script>
-                                        function goNext() {
-                                            document.getElementById("smallform-payday").action = "index.html@p=2446.html";
+                                        function goNextAppForm() {
+                                            document.getElementById("smallform-payday").action = "../index.html@p=2446.html";
                                         }
                                     </script>
                                     <!-- <script>
